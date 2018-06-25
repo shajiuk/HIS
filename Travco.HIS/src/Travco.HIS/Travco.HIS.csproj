@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <VersionPrefix>2.0.0-beta1</VersionPrefix>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Travco.HIS</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Travco.HIS</PackageId>
+    <Version>2.0.0-beta1</Version>
+    <ApplicationInsightsResourceId>/subscriptions/55fe128c-63bb-48fc-a519-cea792b2f318/resourcegroups/HIS/providers/microsoft.insights/components/Travco.HIS</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/55fe128c-63bb-48fc-a519-cea792b2f318/resourcegroups/HIS/providers/microsoft.insights/components/Travco.HIS</ApplicationInsightsAnnotationResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\SearchHA\**" />
+    <Compile Remove="Commands\Search\**" />
+    <Compile Remove="Exceptions\**" />
+    <Compile Remove="Model\**" />
+    <Compile Remove="Translate\**" />
+    <Content Remove="Commands\SearchHA\**" />
+    <Content Remove="Commands\Search\**" />
+    <Content Remove="Exceptions\**" />
+    <Content Remove="Model\**" />
+    <Content Remove="Translate\**" />
+    <EmbeddedResource Remove="Commands\SearchHA\**" />
+    <EmbeddedResource Remove="Commands\Search\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <EmbeddedResource Remove="Translate\**" />
+    <None Remove="Commands\SearchHA\**" />
+    <None Remove="Commands\Search\**" />
+    <None Remove="Exceptions\**" />
+    <None Remove="Model\**" />
+    <None Remove="Translate\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CompareNETObjects" Version="3.6.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.1.0" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0-dev-00024" />
+    <PackageReference Include="Travco.Data.Common.Couchbase" Version="3.0.0-beta1" />
+    <PackageReference Include="Travco.Data.Common.NEST" Version="3.0.0-beta1" />
+    <PackageReference Include="Travco.Data.EventStore" Version="3.0.0-beta1" />
+    <PackageReference Include="Travco.Framework.SimpleHealthCheck" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travco.Helpers\Travco.Helpers.csproj" />
+    <ProjectReference Include="..\Travco.HIS.Api\Travco.HIS.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>

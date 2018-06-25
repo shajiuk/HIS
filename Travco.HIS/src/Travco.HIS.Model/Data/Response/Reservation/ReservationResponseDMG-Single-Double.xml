@@ -1,0 +1,407 @@
+http://localhost:5085/api/HISTest/ReservationResponseDMG
+
+-- SINGLE ROOM --
+
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA">
+      <ComponentInfo User="SELECT" Pwd="2233445566"  ComponentType="Hotel"/>
+    </Interface>
+  </soap-env:Header>
+    <soap-env:Body RequestId="20141521519041217035026" Transaction="HotelResRQ">
+    <OTA_HotelResRQ EchoToken="2014121519041217035026" TimeStamp="2014-12-15T19:04:12+09:00" Target="Production" Version="1.000" PrimaryLangID="en">
+      <HotelReservations>
+        <HotelReservation RoomStayReservation="true">
+          <UniqueID Type="14" ID="HD14121000001"/>
+          <RoomStays>
+            <RoomStay>
+              <RoomTypes>
+                <RoomType RoomTypeCode="SIN"/>
+              </RoomTypes>
+              <RatePlans>
+                <RatePlan RatePlanCode="1100123590">
+                  <MealsIncluded MealPlanCodes="NOM"/>
+                </RatePlan>
+              </RatePlans>
+              <RoomRates>
+                <RoomRate EffectiveDate="2018-04-19" ExpireDate="2018-04-13" RoomTypeCode="1100123027" NumberOfUnits="1" RatePlanCode="1100123590">
+                  <Rates>
+                    <Rate EffectiveDate="2018-04-19" ExpireDate="2018-04-23" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="18689" AmountAfterTax="18689" CurrencyCode="USD" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="130823" AmountAfterTax="130823" CurrencyCode="USD" DecimalPlaces="2"/>
+                    </Rate>
+                  </Rates>
+                </RoomRate>
+              </RoomRates>
+              <GuestCounts>
+               <GuestCount AgeQualifyingCode="1" Count="2"/>
+                <GuestCount AgeQualifyingCode="4" Count="2"/>
+              </GuestCounts>
+              <TimeSpan Start="2018-04-19" End="2018-04-23"/>
+              <DepositPayments>
+                <GuaranteePayment>
+                  <AcceptedPayments>
+                    <AcceptedPayment>
+                      <PaymentCard CardType="1" CardCode="MC" CardNumber=" xxxxxxxxxxxxxxxx" ExpireDate="1216"/>
+                    </AcceptedPayment>
+                  </AcceptedPayments>
+                  <AmountPercent Amount="1308.23" CurrencyCode="USD"/>
+                </GuaranteePayment>
+              </DepositPayments>
+              <BasicPropertyInfo HotelCode="TYY"/>
+              <ResGuestRPHs>
+                <ResGuestRPH RPH="1"/>
+                <ResGuestRPH RPH="2"/>
+                <ResGuestRPH RPH="3"/>
+                <ResGuestRPH RPH="4"/>
+              </ResGuestRPHs>
+            </RoomStay>
+          </RoomStays>
+          <ResGuests>
+            <ResGuest ResGuestRPH="1" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>TARO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="2" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>HANAKO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="3" AgeQualifyingCode="4" Age="5">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>JIRO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="4" AgeQualifyingCode="4" Age="3">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>SABURO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+          </ResGuests>
+        </HotelReservation>
+      </HotelReservations>
+    </OTA_HotelResRQ>
+  </soap-env:Body>
+</soap-env:Envelope>
+
+
+
+
+-- MULTIPLE ROOMS --
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA">
+      <ComponentInfo User="SELECT" Pwd="2233445566" ComponentType="Hotel"/>
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="2014121523470817045368" Transaction="HotelResRQ">
+    <OTA_HotelResRQ EchoToken="2014121523470817045368" TimeStamp="2014-12-15T23:47:08+09:00" Target="Production" Version="1.000" PrimaryLangID="en">
+      <HotelReservations>
+        <HotelReservation RoomStayReservation="true">
+          <UniqueID Type="14" ID="HB14121000001"/>
+          <RoomStays>
+            <RoomStay>
+              <RoomTypes>
+                <RoomType RoomTypeCode="SIN"/>
+              </RoomTypes>
+              <RatePlans>
+                <RatePlan RatePlanCode="1301047501">
+                  <MealsIncluded MealPlanCodes="NOM"/>
+                </RatePlan>
+              </RatePlans>
+              <RoomRates>
+                <RoomRate EffectiveDate="2018-04-04" ExpireDate="2018-04-08" RoomTypeCode="1301047002" NumberOfUnits="1" RatePlanCode="1301047501">
+                  <Rates>
+                    <Rate EffectiveDate="2018-04-04" ExpireDate="2018-04-05" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-05" ExpireDate="2018-04-06" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-06" ExpireDate="2018-04-07" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-07" ExpireDate="2018-04-08" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                  </Rates>
+                </RoomRate>
+              </RoomRates>
+              <GuestCounts>
+                <GuestCount AgeQualifyingCode="1" Count="1"/>
+              </GuestCounts>
+              <TimeSpan Start="2018-04-04" End="2018-04-08"/>
+              <DepositPayments>
+                <GuaranteePayment>
+                  <AcceptedPayments>
+                    <AcceptedPayment>
+                      <PaymentCard CardType="1" CardCode="MC" CardNumber="xxxxxxxxxxxxxxxx" ExpireDate="1216"/>
+                    </AcceptedPayment>
+                  </AcceptedPayments>
+                  <AmountPercent Amount="486.20" CurrencyCode="EUR"/>
+                </GuaranteePayment>
+              </DepositPayments>
+              <BasicPropertyInfo HotelCode="TYY"/>
+              <ResGuestRPHs>
+                <ResGuestRPH RPH="1"/>
+              </ResGuestRPHs>
+            </RoomStay>
+            <RoomStay>
+              <RoomTypes>
+                <RoomType RoomTypeCode="DWB"/>
+              </RoomTypes>
+              <RatePlans>
+                <RatePlan RatePlanCode="1301047501">
+                  <MealsIncluded MealPlanCodes="NOM"/>
+                </RatePlan>
+              </RatePlans>
+              <RoomRates>
+                <RoomRate EffectiveDate="2018-04-04" ExpireDate="2018-04-08" RoomTypeCode="1301047002" NumberOfUnits="1" RatePlanCode="1301047501">
+                  <Rates>
+                    <Rate EffectiveDate="2018-04-04" ExpireDate="2018-04-05" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-05" ExpireDate="2018-04-06" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-06" ExpireDate="2018-04-07" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-07" ExpireDate="2018-04-08" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                  </Rates>
+                </RoomRate>
+              </RoomRates>
+              <GuestCounts>
+                <GuestCount AgeQualifyingCode="1" Count="1"/>
+              </GuestCounts>
+              <TimeSpan Start="2018-04-04" End="2018-04-08"/>
+              <DepositPayments>
+                <GuaranteePayment>
+                  <AcceptedPayments>
+                    <AcceptedPayment>
+                      <PaymentCard CardType="1" CardCode="MC" CardNumber="xxxxxxxxxxxxxxxx" ExpireDate="1216"/>
+                    </AcceptedPayment>
+                  </AcceptedPayments>
+                  <AmountPercent Amount="486.20" CurrencyCode="EUR"/>
+                </GuaranteePayment>
+              </DepositPayments>
+              <BasicPropertyInfo HotelCode="YYP"/>
+              <ResGuestRPHs>
+                <ResGuestRPH RPH="2"/>
+              </ResGuestRPHs>
+            </RoomStay>
+            <RoomStay>
+              <RoomTypes>
+                <RoomType RoomTypeCode="SIN"/>
+              </RoomTypes>
+              <RatePlans>
+                <RatePlan RatePlanCode="1301047501">
+                  <MealsIncluded MealPlanCodes="NOM"/>
+                </RatePlan>
+              </RatePlans>
+              <RoomRates>
+                <RoomRate EffectiveDate="2018-04-04" ExpireDate="2018-04-08" RoomTypeCode="1301047002" NumberOfUnits="1" RatePlanCode="1301047501">
+                  <Rates>
+                    <Rate EffectiveDate="2018-04-04" ExpireDate="2018-04-05" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-05" ExpireDate="2018-04-06" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-06" ExpireDate="2018-04-07" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-07" ExpireDate="2018-04-08" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                  </Rates>
+                </RoomRate>
+              </RoomRates>
+              <GuestCounts>
+                <GuestCount AgeQualifyingCode="1" Count="1"/>
+              </GuestCounts>
+              <TimeSpan Start="2018-04-04" End="2018-04-08"/>
+              <DepositPayments>
+                <GuaranteePayment>
+                  <AcceptedPayments>
+                    <AcceptedPayment>
+                      <PaymentCard CardType="1" CardCode="MC" CardNumber="xxxxxxxxxxxxxxxx" ExpireDate="1216"/>
+                    </AcceptedPayment>
+                  </AcceptedPayments>
+                  <AmountPercent Amount="486.20" CurrencyCode="EUR"/>
+                </GuaranteePayment>
+              </DepositPayments>
+              <BasicPropertyInfo HotelCode="CUM"/>
+              <ResGuestRPHs>
+                <ResGuestRPH RPH="3"/>
+              </ResGuestRPHs>
+            </RoomStay>
+            <RoomStay>
+              <RoomTypes>
+                <RoomType RoomTypeCode="SIN"/>
+              </RoomTypes>
+              <RatePlans>
+                <RatePlan RatePlanCode="1301047501">
+                  <MealsIncluded MealPlanCodes="NOM"/>
+                </RatePlan>
+              </RatePlans>
+              <RoomRates>
+                <RoomRate EffectiveDate="2018-04-04" ExpireDate="2018-04-08" RoomTypeCode="1301047002" NumberOfUnits="1" RatePlanCode="1301047501">
+                  <Rates>
+                    <Rate EffectiveDate="2018-04-04" ExpireDate="2018-04-05" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="9100" AmountAfterTax="9100" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-05" ExpireDate="2018-04-06" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="11680" AmountAfterTax="11680" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-06" ExpireDate="2018-04-07" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                    <Rate EffectiveDate="2018-04-07" ExpireDate="2018-04-08" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="13920" AmountAfterTax="13920" CurrencyCode="EUR" DecimalPlaces="2"/>
+                    </Rate>
+                  </Rates>
+                </RoomRate>
+              </RoomRates>
+              <GuestCounts>
+                <GuestCount AgeQualifyingCode="1" Count="2"/>
+              </GuestCounts>
+              <TimeSpan Start="2018-04-04" End="2018-04-08"/>
+              <DepositPayments>
+                <GuaranteePayment>
+                  <AcceptedPayments>
+                    <AcceptedPayment>
+                      <PaymentCard CardType="1" CardCode="MC" CardNumber="xxxxxxxxxxxxxxxx" ExpireDate="1216"/>
+                    </AcceptedPayment>
+                  </AcceptedPayments>
+                  <AmountPercent Amount="486.20" CurrencyCode="EUR"/>
+                </GuaranteePayment>
+              </DepositPayments>
+              <BasicPropertyInfo HotelCode="TTL"/>
+              <ResGuestRPHs>
+                <ResGuestRPH RPH="4"/>
+              </ResGuestRPHs>
+            </RoomStay>
+          </RoomStays>
+          <ResGuests>
+            <ResGuest ResGuestRPH="1" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>TARO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="2" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>HANAKO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="3" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>JIRO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="4" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>SABURO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+          </ResGuests>
+        </HotelReservation>
+      </HotelReservations>
+    </OTA_HotelResRQ>
+  </soap-env:Body>
+</soap-env:Envelope>
+
+

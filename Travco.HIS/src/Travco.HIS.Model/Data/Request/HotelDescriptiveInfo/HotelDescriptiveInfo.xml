@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="https://protect-eu.mimecast.com/s/EWL6CMjYVumQy2i7ex1P?domain=schemas.xmlsoap.org">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA">
+      <ComponentInfo User="xxx" Pwd="xxx" ComponentType="Hotel"/>
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="2014121800000017180963" Transaction="HotelDescriptiveInfoRQ">
+    <OTA_HotelDescriptiveInfoRQ EchoToken="2014121800000017180963" TimeStamp="2014-12-18T00:00:00+09:00" Target="Production" Version="1.000" PrimaryLangID="en">
+      <HotelDescriptiveInfos>
+        <HotelDescriptiveInfo HotelCode="1406831">
+          <HotelInfo SendData="false"/>
+          <AreaInfo SendRefPoints="true"/>
+          <AffiliationInfo SendDistribSystems="true"/>
+          <ContactInfo SendData="false"/>
+        </HotelDescriptiveInfo>
+      </HotelDescriptiveInfos>
+    </OTA_HotelDescriptiveInfoRQ>
+  </soap-env:Body>
+</soap-env:Envelope>

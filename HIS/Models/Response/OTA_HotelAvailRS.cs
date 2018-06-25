@@ -1,6 +1,6 @@
-﻿namespace HIS.Models.Request
+﻿namespace HIS.Models.Response
 {
-    public class OTA_HotelAvailRQ
+    public class OTA_HotelAvailRS
     {
 
     }

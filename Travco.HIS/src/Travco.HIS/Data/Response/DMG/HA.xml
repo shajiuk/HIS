@@ -1,0 +1,150 @@
+﻿<RETURNDATA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en-GB" type="HA" xsi:noNamespaceSchemaLocation="http://xmlv6live10.travco.co.uk/trlink/schema/HotelAvailabilityV7Rcv.xsd">
+  <MESSAGE>Available and Requestable Hotel List</MESSAGE>
+  <DATA CHECK_IN_DATE="24/Jan/2018" CHECK_OUT_DATE="25/Jan/2018" CITY_CODE="LON" COUNTRY_CODE="UK" NO_OF_ADULTS="5" NO_OF_CHILDREN="0">
+    <COUNTRY_NAME>United Kingdom</COUNTRY_NAME>
+    <CITY_NAME>London</CITY_NAME>
+    <HOTEL_DATA HOTEL_CODE="UHE" STATUS="Available">
+      <HOTEL_NAME>Crowne Plaza London Ealing</HOTEL_NAME>
+      <HOTEL_STAR>4 Star</HOTEL_STAR>
+      <HOTEL_ADDITIONAL_DATA EMAIL="reservations@cp-londonealing.co.uk" FAX_NO="0044 (0)2082333201" TELEPHONE_NO="0044 (0)8719429114">
+        <HOTEL_PICTURE>
+          http://www.travco.co.uk/images/hotels/UHE/UHE_FRONT.jpg
+        </HOTEL_PICTURE>
+        <HOTEL_AMENITY>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="WCH">
+            <HOTEL_AMENITY_NAME>Disabled Facilities</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="BUS">
+            <HOTEL_AMENITY_NAME>Business Centre</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="WFR">
+            <HOTEL_AMENITY_NAME>Free Wi-Fi (public areas)</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="IRR">
+            <HOTEL_AMENITY_NAME>Ironing amenities (on request)</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="SSR">
+            <HOTEL_AMENITY_NAME>Security safe (at reception)</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="NSM">
+            <HOTEL_AMENITY_NAME>Non-Smoking Rooms</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="CON">
+            <HOTEL_AMENITY_NAME>Conference Facilities</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="GYM">
+            <HOTEL_AMENITY_NAME>Gym</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="SRV">
+            <HOTEL_AMENITY_NAME>Room Service</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="PAR">
+            <HOTEL_AMENITY_NAME>Parking - onsite</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="RES">
+            <HOTEL_AMENITY_NAME>Restaurant(s)</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="LAU">
+            <HOTEL_AMENITY_NAME>Laundry Service</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+          <HOTEL_AMENITY_DATA HOTEL_AMENITY_CODE="BAR">
+            <HOTEL_AMENITY_NAME>Bar(s)</HOTEL_AMENITY_NAME>
+          </HOTEL_AMENITY_DATA>
+        </HOTEL_AMENITY>
+        <HOTEL_ADDRESS>
+          <ADDRESS_LINE1>Western Avenue Hanger Lane</ADDRESS_LINE1>
+        </HOTEL_ADDRESS>
+        <HotelDescription>
+          <Overview>
+            Crowne Plaza London Ealing (part of Crowne Plaza) is in the heart of London and walking distance from the Swaminarayan Hindu Temple and the Wembley Stadium. This hotel is rated for its cleanliness and its rooms. The main hotel amenities are coffee shop or café, restaurant, bar and lounge and 24-hour front desk. Additional amenities include safe-deposit box at front desk, terrace, facilities for disabled guests, non-smoking rooms, designated smoking areas, heating, ironing facilities, currency exchange, ironing service and fax and photocopying. This hotel accepts the following payment types: American Express, JCB International, MasterCard and Visa. Cash not accepted. Pets not allowed. This hotel has received TripAdvisor's Certificate of Excellence 2014. The hotel is recommended for couples and families.
+          </Overview>
+          <Location>
+            This 4 star hotel is within close proximity of the Buckingham Palace and the Bank of England Museum. The closest airports to the hotel are Heathrow and London City.
+          </Location>
+          <Exterior>
+            The hotel is housed in a modern mid-rise building with minimalist facade.
+          </Exterior>
+          <LobbyAndInterior/>
+          <LeisureFacilities>
+            The hotel has business facilities including business center, conference center and multiple large conference rooms. Wellness facilities include fitness facilities.
+          </LeisureFacilities>
+          <Rooms>
+            Relax in one of the lovely 139 air conditioned rooms at Crowne Plaza London Ealing. The main room amenities are in-room safe, in-room safe (laptop compatible), iron and ironing board and satellite TV service. Additional room amenities include bathrobes, coffee and tea maker, complimentary toiletries, adjoining rooms, daily housekeeping and desk.
+          </Rooms>
+          <RestaurantsAndBars>
+            Eating and drinking facilities include coffee shop or café, restaurant and bar and lounge.
+          </RestaurantsAndBars>
+          <FamilyInformation/>
+          <OtherInformation>Chargeable private parking is possible onsite.</OtherInformation>
+        </HotelDescription>
+        <Location LocationCode="SUB">
+          <LocationName>Suburbs</LocationName>
+        </Location>
+        <GeoCodes>
+          <Longitude>-0.293980</Longitude>
+          <Latitude>51.529621</Latitude>
+        </GeoCodes>
+        <HotelProperties>
+          <Website>www.crowneplaza.com</Website>
+          <CheckIn>14:00</CheckIn>
+          <CheckOut>12:00</CheckOut>
+          <NoOfDisabledRooms>0</NoOfDisabledRooms>
+          <NoOfFloors>5</NoOfFloors>
+        </HotelProperties>
+        <HotelArrivalPointOthers>
+          <HotelArrivalPointOther ArrivalPointCategoryCode="AIR">
+            <ArrivalPointName>London Heathrow</ArrivalPointName>
+            <Distance>20</Distance>
+            <Units>km</Units>
+            <IsNearest>no</IsNearest>
+          </HotelArrivalPointOther>
+          <HotelArrivalPointOther ArrivalPointCategoryCode="TUB">
+            <ArrivalPointName>Hanger Lane</ArrivalPointName>
+            <Distance>100</Distance>
+            <Units>m</Units>
+            <IsNearest>no</IsNearest>
+          </HotelArrivalPointOther>
+        </HotelArrivalPointOthers>
+        <HotelArrivalPoints/>
+        <HotelCities>
+          <HotelCity HotelCity="LON">
+            <HotelCityName>London</HotelCityName>
+          </HotelCity>
+        </HotelCities>
+        <HotelCityAreas>
+          <HotelCityArea CityAreaCode="GLD">
+            <CityAreaName>Greater London</CityAreaName>
+          </HotelCityArea>
+        </HotelCityAreas>
+      </HOTEL_ADDITIONAL_DATA>
+      <SubHotelData CURRENCY_CODE="PDS" HOTEL_CODE="UHE" STATUS="Available">
+        <HOTEL_NAME>Crowne Plaza London Ealing</HOTEL_NAME>
+        <RatePlanDetails RatePlanCode="0093">
+          <RatePlanDescription>Standard-Bed and Breakfast-Standard</RatePlanDescription>
+        </RatePlanDetails>
+        <CURRENCY_NAME>Pounds Sterling</CURRENCY_NAME>
+        <ROOM_DATA ADULT_PRICE="37.50" CCHARGES_CODE="QW3927" CHILD_PRICE="0.00" EXTRA_BED_INDICATOR="N" NO_OF_EXTRA_BEDS="0" PRICE_CODE="NAB2CLON" ROOM_CODE="TWB" ROOM_PAX="2" TOTAL_ADULT_PRICE="150.00">
+          <ROOM_NAME>Twin Room - With Breakfast</ROOM_NAME>
+          <ADULT_PRICE_DETAILS>24-JAN-2018 1nt@75.00</ADULT_PRICE_DETAILS>
+          <MINIMUM_CHARGEABLE_DETAILS/>
+          <ReducedPriceDetails AdultReductionAmount="21.74" AdultReductionPercentage="36.70"/>
+        </ROOM_DATA>
+        <ROOM_DATA ADULT_PRICE="37.50" CCHARGES_CODE="QW3928" CHILD_PRICE="0.00" EXTRA_BED_INDICATOR="N" NO_OF_EXTRA_BEDS="0" PRICE_CODE="NAB2CLON" ROOM_CODE="DWB" ROOM_PAX="2" TOTAL_ADULT_PRICE="150.00">
+          <ROOM_NAME>Double Room - With Breakfast</ROOM_NAME>
+          <ADULT_PRICE_DETAILS>24-JAN-2018 1nt@75.00</ADULT_PRICE_DETAILS>
+          <MINIMUM_CHARGEABLE_DETAILS/>
+          <ReducedPriceDetails AdultReductionAmount="21.74" AdultReductionPercentage="36.70"/>
+        </ROOM_DATA>
+        <ROOM_DATA ADULT_PRICE="70.65" CCHARGES_CODE="QW3930" CHILD_PRICE="0.00" EXTRA_BED_INDICATOR="N" PRICE_CODE="NAB2CLON" ROOM_CODE="SWB" ROOM_PAX="1" TOTAL_ADULT_PRICE="70.65">
+          <ROOM_NAME>Single Room - With Breakfast</ROOM_NAME>
+          <ADULT_PRICE_DETAILS>24-JAN-2018 1nt@70.65</ADULT_PRICE_DETAILS>
+          <MINIMUM_CHARGEABLE_DETAILS/>
+          <ReducedPriceDetails AdultReductionAmount="42.39" AdultReductionPercentage="37.50"/>
+        </ROOM_DATA>
+        <HOTEL_PICTURE>
+          http://www.travco.co.uk/images/hotels/UHE/UHE_FRONT.jpg
+        </HOTEL_PICTURE>
+      </SubHotelData>
+    </HOTEL_DATA>
+  </DATA>
+</RETURNDATA>

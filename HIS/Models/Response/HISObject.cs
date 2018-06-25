@@ -1,11 +1,11 @@
 ﻿using System;
-namespace HIS.Models
+namespace HIS.Models.Response
 {
     public class HISObject
     {
         public HISObject()
         {
-            var test = new HISHotel<>
+            //var test = new HISHotel<>
         }
     }
 

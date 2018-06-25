@@ -1,0 +1,44 @@
+﻿{
+  "searchapi": {
+    "listenuri": "http://0.0.0.0:5000"
+  },
+  "couchbase": {
+    "endpoints": "http://couchbase-a:8091/pools,http://couchbase-b:8091/pools,http://couchbase-c:8091/pools",
+    "username": "Administrator",
+    "password": "Travco-SS100"
+  },
+  "elasticsearch": {
+    "endpoints": "http://elastic1:9200,http://elastic2:9200,http://elastic3:9200"
+  },
+  "eventStore": {
+    "endpoints": "http://couchbase-a:8091/pools,http://couchbase-b:8091/pools,http://couchbase-c:8091/pools",
+    "username": "admin",
+    "password": "Travco-SS100"
+  },
+  "authorisation": {
+    "tokenserver": { "endpoint": "https://identity.travco.co.uk" },
+    "clientname": "hotel.api",
+    "scope": "hotelapi",
+    "secret": "notvery"
+  },
+  "telemetry": {
+    "disabled": true
+  },
+  "HIS": {
+    "DMG": {
+      "endpoint": "http://xmlv7test.travco.co.uk/trlink/link1/show",
+      "agent": "SELECT",
+      "password": "2233445566",
+      "logfile": "Logs/HIS-{Date}.txt"
+    },
+    "export": {
+      "uri": "http://localhost:9001",
+      "username": "his",
+      "password": "hunter2",
+      "connectionstring": "Server=172.16.50.134;Database=uvInventory;User Id=sa;Password=PartyMan97;"
+    },
+    "cms": {
+      "connectionstring": "Server=tcp:travcohis.database.windows.net,1433;Initial Catalog=HISExport;Persist Security Info=False;User ID=travcodev;Password=PartyMan97;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    }
+  }
+}

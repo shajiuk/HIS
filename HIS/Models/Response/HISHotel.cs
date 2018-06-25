@@ -1,4 +1,4 @@
-﻿namespace HIS.Models
+﻿namespace HIS.Models.Response
 {
     public class HISHotel<T, U> where T : class
                                 where U : class

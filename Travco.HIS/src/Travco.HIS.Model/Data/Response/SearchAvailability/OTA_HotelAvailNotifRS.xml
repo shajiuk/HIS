@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA"
+               xmlns="http://api.hotels-vacation.com/Documentation/XML/OTA/4/2011B/">
+      <ComponentInfo User="his" Pwd="******" ComponentType="Hotel" />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="2014121813010017221518" Transaction="HotelAvailNotifRS">
+<OTA_HotelAvailNotifRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2012-0902T15:01:34+02:00" Version="1.000" PrimaryLangID="en" >
+  <Success/>
+  <Warnings>
+    <Warning Type="3" ShortText=" Unable to process this request. " Code="450"> "Unable to process this request at this time.  </Warning>
+    <Warning Type="3" ShortText=" Unable to process this request. " Code="450"> "Unable to process this request at this time.  </Warning>
+  </Warnings>
+  <Errors>
+    <Error Language="en-us" Type="3" ShortText=" Unable to process this request. " Code="450"> "Unable to process this request at this time.  </Error>
+    <Error Language="en-us" Type="3" ShortText=" Unable to process this request. " Code="450"> "Unable to process this request at this time.  </Error>
+  </Errors>
+</OTA_HotelAvailNotifRS>
+  </soap-env:Body>
+</soap-env:Envelope>

@@ -1,0 +1,27 @@
+HIS HOTEL CODE:HNL00049
+Derby HOTEL CODE:1501001
+HOTEL NAME:HYATT PLACE WAIKIKI BEACH
+
+
+==================================================================================================================================
+3)OTA_Cancel
+
+2015/04/27 17:12:40 387	[INFO ]	DerbySoft	OTA_Cancel	START	ó\ñÒî‘çÜÅFHB15042779670
+2015/04/27 17:12:40 387	[INFO ]	DerbySoft	RequestVQC	START
+2015/04/27 17:12:40 387	[INFO ]	DerbySoft	GetRequestID	START
+2015/04/27 17:12:40 418	[INFO ]	DerbySoft	GetRequestID	END
+2015/04/27 17:12:40 418	[INFO ]	DerbySoft	ConnectHttp	START
+2015/04/27 17:12:40 418	[INFO ]	DerbySoft	ConnectHttp	Connect URL : https://protect-eu.mimecast.com/s/8A5VC1jmvuW7A6iQnnmo?domain=rush.derbysoftca.com
+2015/04/27 17:12:40 558	[DEBUG]	DerbySoft	
+*********<Request XML>*********
+<?xml version="1.0" encoding="utf-8"?><soap-env:Envelope xmlns:soap-env="https://protect-eu.mimecast.com/s/Q79CC2RnwsyN2VHyI3Xn?domain=schemas.xmlsoap.org"><soap-env:Header><Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA" xmlns="https://protect-eu.mimecast.com/s/xD1XC3loxuN5gXTMtqJU?domain=api.hotels-vacation.com"><ComponentInfo User="his" Pwd="XXXXXXXX" ComponentType="Hotel"  /></Interface></soap-env:Header><soap-env:Body RequestId="2015042717124023388688" Transaction="CancelRQ"><OTA_CancelRQ xmlns:xsi="https://protect-eu.mimecast.com/s/LEO7C48pyskp2zigspEX?domain=w3.org" xmlns:xsd="https://protect-eu.mimecast.com/s/ETOLC58qzsNVPMT1icN_?domain=w3.org" EchoToken="2015042717124023388688" TimeStamp="2015-04-27T17:12:40+09:00" Target="Production" Version="1.000" PrimaryLangID="en" CancelType="Commit" xmlns="https://protect-eu.mimecast.com/s/rs1nC66rAuwn6Pf7fIbX?domain=opentravel.org"><UniqueID Type="15" ID="HB15042779670" /></OTA_CancelRQ></soap-env:Body></soap-env:Envelope>
+2015/04/27 17:12:42 742	[DEBUG]	DerbySoft	
+*********<Response XML>*********
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns="https://protect-eu.mimecast.com/s/rs1nC66rAuwn6Pf7fIbX?domain=opentravel.org" xmlns:soap="https://protect-eu.mimecast.com/s/Q79CC2RnwsyN2VHyI3Xn?domain=schemas.xmlsoap.org" xmlns:hisota="https://protect-eu.mimecast.com/s/xD1XC3loxuN5gXTMtqJU?domain=api.hotels-vacation.com"><soap:Header><hisota:Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA"><hisota:ComponentInfo User="derby" Pwd="XXXXXXXX" ComponentType="Hotel"/></hisota:Interface></soap:Header><soap:Body RequestId="2015042717124023388688" Transaction="CancelRS"><OTA_CancelRS EchoToken="2015042717124023388688" Target="Production" Version="1.000" PrimaryLangID="en" Status="Cancelled"><UniqueID Type="15" ID="HYATT000EC55AE17-658E-43F7-B4D2-E1648455E5F1"/><CancelInfoRS><UniqueID Type="15" ID="HB15042779670"/></CancelInfoRS></OTA_CancelRS></soap:Body></soap:Envelope>
+2015/04/27 17:12:42 742	[INFO ]	DerbySoft	ConnectHttp	END
+2015/04/27 17:12:42 742	[INFO ]	DerbySoft	CheckResponse	START
+2015/04/27 17:12:42 742	[INFO ]	DerbySoft	CheckResponse	END
+2015/04/27 17:12:42 976	[INFO ]	DerbySoft	RequestVQC	END
+2015/04/27 17:12:42 976	[INFO ]	DerbySoft	OTA_Cancel	END	ó\ñÒî‘çÜÅFHB15042779670
+
+==================================================================================================================================

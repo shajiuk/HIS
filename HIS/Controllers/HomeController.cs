@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using HIS.Models;
+using HIS.Models.Request;
 
 namespace HIS.Controllers
 {
@@ -12,6 +13,7 @@ namespace HIS.Controllers
     {
         public IActionResult Index()
         {
+            var tets = new HISHotel<EnvelopeHeader<Models.Request.IEnvelopeBody>, OTA_HotelAvailRQ>();
             return View();
         }
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap-env:Envelope xmlns:soap-env="https://protect-eu.mimecast.com/s/Q79CC2RnwsyN2VHyI3Xn?domain=schemas.xmlsoap.org">
+	<soap-env:Header>
+		<Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA" xmlns="https://protect-eu.mimecast.com/s/xD1XC3loxuN5gXTMtqJU?domain=api.hotels-vacation.com">
+			<ComponentInfo User="his" Pwd="XXXXXXXX" ComponentType="Hotel"  />
+		</Interface>
+	</soap-env:Header>
+	<soap-env:Body RequestId="2015042717124023388688" Transaction="CancelRQ">
+		<OTA_CancelRQ xmlns:xsi="https://protect-eu.mimecast.com/s/LEO7C48pyskp2zigspEX?domain=w3.org" xmlns:xsd="https://protect-eu.mimecast.com/s/ETOLC58qzsNVPMT1icN_?domain=w3.org" EchoToken="2015042717124023388688" TimeStamp="2015-04-27T17:12:40+09:00" Target="Production" Version="1.000" PrimaryLangID="en" CancelType="Commit" xmlns="https://protect-eu.mimecast.com/s/rs1nC66rAuwn6Pf7fIbX?domain=opentravel.org">
+			<UniqueID Type="15" ID="HB15042779670" />
+		</OTA_CancelRQ>
+	</soap-env:Body>
+</soap-env:Envelope>

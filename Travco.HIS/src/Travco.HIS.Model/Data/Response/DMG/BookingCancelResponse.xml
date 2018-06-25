@@ -1,0 +1,23 @@
+﻿<RETURNDATA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en-GB" type="CAD" xsi:noNamespaceSchemaLocation="http://xmlv5test.travco.co.uk/trlink/schema/CancellationDetailsV7Rcv.xsd">
+  <DATA ARRIVAL_DATE="29-Jun-2014" BOOKING_REF_NO="SM03127/01" DURATION="1" HOTEL_CODE="YYL" HOTEL_DEADLINE="14:30" MainHotelCode="YYL" ORIGINAL_PRICE="30.46" ROOM_CODE="DWB">
+    <HOTEL_NAME>COUNTY LONDON (TESTING)</HOTEL_NAME>
+    <ROOM_NAME>Double Room with Breakfast</ROOM_NAME>
+    <CANCELLATION_DETAILS>
+      <CANCELLATION_CHARGES_NOW DATE="16-Mar-2018" TIME="13:55" TOTAL_CANCELLATION_FEE="30.46">
+        <CANCELLATION_POLICY>After 14:30 on cancelled date</CANCELLATION_POLICY>
+        <MORE_CANCELLATION_DETAILS>
+          <MORE_DETAILS>29-JUN-2014 1nt@30.46</MORE_DETAILS>
+        </MORE_CANCELLATION_DETAILS>
+      </CANCELLATION_CHARGES_NOW>
+    </CANCELLATION_DETAILS>
+    <FULL_CANCELLATION_DETAILS>
+      <DETAILS EFFECTIVE_FROM="29-Jun-2014" NO_OF_DAYS_BEFORE_ARRIVAL="15" TIME_AFTER="14:30">
+        <FULL_CANCELLATION_POLICY>Cnx Fee - 1 Nt x 100.00%</FULL_CANCELLATION_POLICY>
+        <MESSAGE LAST_DATE_BY_WHICH_TO_CANCEL="14-Jun-2014" TIME_BEFORE="14:30"/>
+      </DETAILS>
+    </FULL_CANCELLATION_DETAILS>
+    <RatePlanDetails RatePlanCode="0093">
+      <RatePlanDescription>Standard-Bed and Breakfast-Standard</RatePlanDescription>
+    </RatePlanDetails>
+  </DATA>
+</RETURNDATA>

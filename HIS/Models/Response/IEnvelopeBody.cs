@@ -1,4 +1,4 @@
-﻿namespace HIS.Models
+﻿namespace HIS.Models.Response
 {
     public interface IEnvelopeBody
     {

@@ -1,0 +1,26 @@
+HIS HOTEL CODE:HNL00049
+Derby HOTEL CODE:1501001
+HOTEL NAME:HYATT PLACE WAIKIKI BEACH
+
+==================================================================================================================================
+3)OTA_HotelAvail
+
+2015/04/27 17:10:26 461	[INFO ]	DerbySoft	OTA_HotelAvail	START
+2015/04/27 17:10:26 476	[INFO ]	DerbySoft	RequestVQC	START
+2015/04/27 17:10:26 476	[INFO ]	DerbySoft	GetRequestID	START
+2015/04/27 17:10:26 601	[INFO ]	DerbySoft	GetRequestID	END
+2015/04/27 17:10:26 601	[INFO ]	DerbySoft	ConnectHttp	START
+2015/04/27 17:10:26 601	[INFO ]	DerbySoft	ConnectHttp	Connect URL : https://protect-eu.mimecast.com/s/z79OCLgXVH8JDksxAeVu?domain=rush.derbysoftca.com
+2015/04/27 17:10:26 601	[DEBUG]	DerbySoft	
+*********<Request XML>*********
+<?xml version="1.0" encoding="utf-8"?><soap-env:Envelope xmlns:soap-env="https://protect-eu.mimecast.com/s/EWL6CMjYVumQy2i7ex1P?domain=schemas.xmlsoap.org"><soap-env:Header><Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA" xmlns="https://protect-eu.mimecast.com/s/uI4fCNxZ6uy2qZHPhpNi?domain=api.hotels-vacation.com"><ComponentInfo User="his" Pwd="XXXXXXXX" ComponentType="Hotel"  /></Interface></soap-env:Header><soap-env:Body RequestId="2015042717102623388656" Transaction="HotelAvailRQ"><OTA_HotelAvailRQ xmlns:xsi="https://protect-eu.mimecast.com/s/z-qtCO710IQ6LNUlqpRn?domain=w3.org" xmlns:xsd="https://protect-eu.mimecast.com/s/BXGLCP12VSV710SpEuH-?domain=w3.org" EchoToken="2015042717102623388656" TimeStamp="2015-04-27T17:10:26+09:00" Target="Production" Version="1.000" PrimaryLangID="en" xmlns="https://protect-eu.mimecast.com/s/z4jyCQ138SZ51Xf6lqdh?domain=opentravel.org"><AvailRequestSegments><AvailRequestSegment><StayDateRange Start="2015-10-12" Duration="Day" End="2015-10-13" /><RatePlanCandidates><RatePlanCandidate RatePlanType="5" RatePlanCode="1501001501" RPH="1"><HotelRefs><HotelRef HotelCode="1501001" /></HotelRefs><MealsIncluded MealPlanCodes="BRE" /></RatePlanCandidate></RatePlanCandidates><RoomStayCandidates><RoomStayCandidate RoomTypeCode="1501001004" Quantity="1" RatePlanCandidateRPH="1"><GuestCounts><GuestCount AgeQualifyingCode="1" Count="2" /></GuestCounts></RoomStayCandidate></RoomStayCandidates></AvailRequestSegment></AvailRequestSegments></OTA_HotelAvailRQ></soap-env:Body></soap-env:Envelope>
+2015/04/27 17:10:30 907	[DEBUG]	DerbySoft	
+*********<Response XML>*********
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns="https://protect-eu.mimecast.com/s/z4jyCQ138SZ51Xf6lqdh?domain=opentravel.org" xmlns:soap="https://protect-eu.mimecast.com/s/EWL6CMjYVumQy2i7ex1P?domain=schemas.xmlsoap.org" xmlns:hisota="https://protect-eu.mimecast.com/s/uI4fCNxZ6uy2qZHPhpNi?domain=api.hotels-vacation.com"><soap:Header><hisota:Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA"><hisota:ComponentInfo User="derby" Pwd="XXXXXXXX" ComponentType="Hotel"/></hisota:Interface></soap:Header><soap:Body RequestId="2015042717102623388656" Transaction="HotelAvailRS"><OTA_HotelAvailRS TimeStamp="2015-04-27T08:10:31.006Z" EchoToken="2015042717102623388656" Target="Production" Version="1.000" PrimaryLangID="en"><RoomStays><RoomStay><RoomTypes><RoomType RoomTypeCode="1501001004" NumberOfUnits="1"><RoomDescription><Text>Standard Room, City View</Text></RoomDescription></RoomType></RoomTypes><RatePlans><RatePlan RatePlanCode="1501001501"><RatePlanDescription Name="PARTNER RATE - STANDALONE"/><MealsIncluded MealPlanCodes="BRE"/></RatePlan></RatePlans><RoomRates><RoomRate NumberOfUnits="1" EffectiveDate="2015-10-12" ExpireDate="2015-10-13" RoomTypeCode="1501001004" RatePlanCode="1501001501"><Rates><Rate EffectiveDate="2015-10-12" ExpireDate="2015-10-13" RateTimeUnit="Day"><Base AmountBeforeTax="23818" AmountAfterTax="23818" DecimalPlaces="2" CurrencyCode="USD"/><Total AmountBeforeTax="23818" AmountAfterTax="23818" DecimalPlaces="2" CurrencyCode="USD"/></Rate></Rates></RoomRate></RoomRates><GuestCounts><GuestCount AgeQualifyingCode="1" Count="2"/></GuestCounts><TimeSpan Start="2015-10-12" End="2015-10-13" Duration="P1N"/><DepositPayments><GuaranteePayment><AmountPercent Percent="100"/></GuaranteePayment></DepositPayments><CancelPenalties><CancelPenalty PolicyCode="CXP"><Deadline OffsetTimeUnit="Day" OffsetUnitMultiplier="3"/><AmountPercent Percent="100"/></CancelPenalty></CancelPenalties><Total AmountBeforeTax="23818" AmountAfterTax="23818" DecimalPlaces="2" CurrencyCode="USD"/><BasicPropertyInfo HotelCode="1501001"/></RoomStay></RoomStays></OTA_HotelAvailRS></soap:Body></soap:Envelope>
+2015/04/27 17:10:30 922	[INFO ]	DerbySoft	ConnectHttp	END
+2015/04/27 17:10:30 922	[INFO ]	DerbySoft	CheckResponse	START
+2015/04/27 17:10:30 922	[INFO ]	DerbySoft	CheckResponse	END
+2015/04/27 17:10:30 922	[INFO ]	DerbySoft	RequestVQC	END
+2015/04/27 17:10:30 922	[INFO ]	DerbySoft	OTA_HotelAvail	END
+
+==================================================================================================================================

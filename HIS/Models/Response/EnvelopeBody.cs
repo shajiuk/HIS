@@ -1,4 +1,4 @@
-﻿namespace HIS.Models.Request
+﻿namespace HIS.Models.Response
 {
     public class EnvelopeBody<T, U> : IEnvelopeBody
     {

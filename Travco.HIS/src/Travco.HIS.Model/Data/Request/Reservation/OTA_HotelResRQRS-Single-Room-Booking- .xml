@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA">
+      <ComponentInfo User="xxx" Pwd="xxx" ComponentType="Hotel"/>
+    </Interface>
+  </soap-env:Header>
+    <soap-env:Body RequestId="2014121519041217035026" Transaction="HotelResRQ">
+    <OTA_HotelResRQ EchoToken="2014121519041217035026" TimeStamp="2014-12-15T19:04:12+09:00" Target="Production" Version="1.000" PrimaryLangID="en">
+      <HotelReservations>
+        <HotelReservation RoomStayReservation="true">
+          <UniqueID Type="14" ID="HD14121000001"/>
+          <RoomStays>
+            <RoomStay>
+              <RoomTypes>
+                <RoomType RoomTypeCode="1100123027"/>
+              </RoomTypes>
+              <RatePlans>
+                <RatePlan RatePlanCode="1100123590">
+                  <MealsIncluded MealPlanCodes="NOM"/>
+                </RatePlan>
+              </RatePlans>
+              <RoomRates>
+                <RoomRate EffectiveDate="2015-02-06" ExpireDate="2015-02-13" RoomTypeCode="1100123027" NumberOfUnits="1" RatePlanCode="1100123590">
+                  <Rates>
+                    <Rate EffectiveDate="2015-02-06" ExpireDate="2015-02-13" RateTimeUnit="Day">
+                      <Base AmountBeforeTax="18689" AmountAfterTax="18689" CurrencyCode="USD" DecimalPlaces="2"/>
+                      <Total AmountBeforeTax="130823" AmountAfterTax="130823" CurrencyCode="USD" DecimalPlaces="2"/>
+                    </Rate>
+                  </Rates>
+                </RoomRate>
+              </RoomRates>
+              <GuestCounts>
+                <GuestCount AgeQualifyingCode="1" Count="2"/>
+                <GuestCount AgeQualifyingCode="4" Count="2"/>
+              </GuestCounts>
+              <TimeSpan Start="2015-02-06" End="2015-02-13"/>
+              <DepositPayments>
+                <GuaranteePayment>
+                  <AcceptedPayments>
+                    <AcceptedPayment>
+                      <PaymentCard CardType="1" CardCode="MC" CardNumber=" xxxxxxxxxxxxxxxx" ExpireDate="1216"/>
+                    </AcceptedPayment>
+                  </AcceptedPayments>
+                  <AmountPercent Amount="1308.23" CurrencyCode="USD"/>
+                </GuaranteePayment>
+              </DepositPayments>
+              <BasicPropertyInfo HotelCode="1100123"/>
+              <ResGuestRPHs>
+                <ResGuestRPH RPH="1"/>
+                <ResGuestRPH RPH="2"/>
+                <ResGuestRPH RPH="3"/>
+                <ResGuestRPH RPH="4"/>
+              </ResGuestRPHs>
+            </RoomStay>
+          </RoomStays>
+          <ResGuests>
+            <ResGuest ResGuestRPH="1" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>TARO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="2" AgeQualifyingCode="1">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>HANAKO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="3" AgeQualifyingCode="4" Age="5">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>JIRO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+            <ResGuest ResGuestRPH="4" AgeQualifyingCode="4" Age="3">
+              <Profiles>
+                <ProfileInfo>
+                  <Profile ProfileType="1">
+                    <Consumer>
+                      <PersonName>
+                        <GivenName>SABURO</GivenName>
+                        <Surname>TEST</Surname>
+                      </PersonName>
+                    </Consumer>
+                  </Profile>
+                </ProfileInfo>
+              </Profiles>
+            </ResGuest>
+          </ResGuests>
+        </HotelReservation>
+      </HotelReservations>
+    </OTA_HotelResRQ>
+  </soap-env:Body>
+</soap-env:Envelope>

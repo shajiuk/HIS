@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header/>
+  <soap-env:Body RequestId="2014092917033613018229" Transaction="HotelAvailRS">
+    <OTA_HotelAvailRS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TimeStamp="2014-09-29T16:03:44.3516448+08:00" EchoToken="2014092917033613018229" Target="Production" Version="1.000" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+      <Errors>
+        <Error Type="3" ShortText="{0}" Code="{1}">{0}</Error>
+      </Errors>
+    </OTA_HotelAvailRS>
+  </soap-env:Body>
+</soap-env:Envelope>

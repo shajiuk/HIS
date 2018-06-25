@@ -1,4 +1,4 @@
-﻿namespace HIS.Models
+﻿namespace HIS.Models.Request
 {
     public class EnvelopeHeader<T> : IEnvelopeHeader
     {

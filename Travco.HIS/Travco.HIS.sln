@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4BF6712-7072-4395-9262-29FAF16ECBE3}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		Dockerfile.Dev = Dockerfile.Dev
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F753FB05-406E-44C5-AB7F-30E69E870FB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D8F13FC3-1745-4C27-873A-C6584EAA3888}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travco.Helpers", "src\Travco.Helpers\Travco.Helpers.csproj", "{7FDC5CE1-4A57-478D-BA64-1B69224913CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travco.HIS", "src\Travco.HIS\Travco.HIS.csproj", "{CC0D1A7A-2D4D-417F-9B3D-42E6030DE4D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travco.HIS.Model", "src\Travco.HIS.Model\Travco.HIS.Model.csproj", "{7FD616EE-2DAB-4350-A795-EE85E7D59F7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travco.HIS.Api", "src\Travco.HIS.Api\Travco.HIS.Api.csproj", "{AE4DCF02-9D06-41D4-A855-14FFBF92AFC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travco.HIS.UnitTests", "test\Travco.HIS.UnitTests\Travco.HIS.UnitTests.csproj", "{06B902E7-D8AA-4C87-B683-D89E3836C7AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FDC5CE1-4A57-478D-BA64-1B69224913CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FDC5CE1-4A57-478D-BA64-1B69224913CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FDC5CE1-4A57-478D-BA64-1B69224913CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FDC5CE1-4A57-478D-BA64-1B69224913CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0D1A7A-2D4D-417F-9B3D-42E6030DE4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0D1A7A-2D4D-417F-9B3D-42E6030DE4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0D1A7A-2D4D-417F-9B3D-42E6030DE4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0D1A7A-2D4D-417F-9B3D-42E6030DE4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD616EE-2DAB-4350-A795-EE85E7D59F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD616EE-2DAB-4350-A795-EE85E7D59F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD616EE-2DAB-4350-A795-EE85E7D59F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD616EE-2DAB-4350-A795-EE85E7D59F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4DCF02-9D06-41D4-A855-14FFBF92AFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4DCF02-9D06-41D4-A855-14FFBF92AFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4DCF02-9D06-41D4-A855-14FFBF92AFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4DCF02-9D06-41D4-A855-14FFBF92AFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B902E7-D8AA-4C87-B683-D89E3836C7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B902E7-D8AA-4C87-B683-D89E3836C7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B902E7-D8AA-4C87-B683-D89E3836C7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B902E7-D8AA-4C87-B683-D89E3836C7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7FDC5CE1-4A57-478D-BA64-1B69224913CB} = {F753FB05-406E-44C5-AB7F-30E69E870FB0}
+		{CC0D1A7A-2D4D-417F-9B3D-42E6030DE4D1} = {F753FB05-406E-44C5-AB7F-30E69E870FB0}
+		{7FD616EE-2DAB-4350-A795-EE85E7D59F7A} = {F753FB05-406E-44C5-AB7F-30E69E870FB0}
+		{AE4DCF02-9D06-41D4-A855-14FFBF92AFC7} = {F753FB05-406E-44C5-AB7F-30E69E870FB0}
+		{06B902E7-D8AA-4C87-B683-D89E3836C7AF} = {D8F13FC3-1745-4C27-873A-C6584EAA3888}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAA1FB17-03B7-4ADA-8834-2D3002B4D04D}
+	EndGlobalSection
+EndGlobal

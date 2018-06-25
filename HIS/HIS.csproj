@@ -12,4 +12,11 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Request\" />
+    <Folder Include="Models\Response\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Response\ErrorViewModel.cs" />
+  </ItemGroup>
 </Project>

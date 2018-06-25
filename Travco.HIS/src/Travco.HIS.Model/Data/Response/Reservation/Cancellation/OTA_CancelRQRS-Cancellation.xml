@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope>
+  <soap:Header>
+    <hisota:Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA">
+      <hisota:ComponentInfo User=" xxx" Pwd=" xxx" ComponentType="Hotel"/>
+    </hisota:Interface>
+  </soap:Header>
+  <soap:Body RequestId="2014121523335417042503" Transaction="CancelRS">
+    <OTA_CancelRS EchoToken="2014121523335417042503" Target="Production" Version="1.000" PrimaryLangID="en" Status="Cancelled">
+      <Success/>
+      <UniqueID Type="15" ID="04A3C42CC-4A9426E-86E2-06B312D337EE"/>
+      <CancelInfoRS>
+        <UniqueID Type="15" ID="HV1408300001"/>
+      </CancelInfoRS>
+    </OTA_CancelRS>
+  </soap:Body>
+</soap:Envelope>

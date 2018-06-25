@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns="https://protect-eu.mimecast.com/s/XRmkCxGZrFN25LTRLYk6?domain=opentravel.org" xmlns:soap="https://protect-eu.mimecast.com/s/67xnCy81vsVlP7SA5smH?domain=schemas.xmlsoap.org" xmlns:hisota="https://protect-eu.mimecast.com/s/4gELCzm2wuV0YGSBhROt?domain=api.hotels-vacation.com">
+	<soap:Header>
+		<hisota:Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA">
+			<hisota:ComponentInfo User="derby" Pwd="XXXXXXXX" ComponentType="Hotel"/>
+		</hisota:Interface>
+	</soap:Header>
+	<soap:Body RequestId="20150424023516855856" Transaction="HotelAvailNotifRQ">
+		<OTA_HotelAvailNotifRQ TimeStamp="2015-04-24T02:35:16.944Z" Version="1.000" PrimaryLangID="en">
+			<AvailStatusMessages HotelCode="1501001">
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-24" End="2015-04-25" RatePlanCode="1501001501" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-25" End="2015-04-26" RatePlanCode="1501001501" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-26" End="2015-04-27" RatePlanCode="1501001501" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-27" End="2015-04-28" RatePlanCode="1501001501" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-24" End="2015-04-25" RatePlanCode="1501001502" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-25" End="2015-04-26" RatePlanCode="1501001502" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-26" End="2015-04-27" RatePlanCode="1501001502" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+				<AvailStatusMessage BookingLimit="3" BookingLimitMessageType="SetLimit">
+					<StatusApplicationControl Start="2015-04-27" End="2015-04-28" RatePlanCode="1501001502" InvCode="1501001004" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+					<LengthsOfStay ArrivalDateBased="1" FixedPatternLength="7">
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="true"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+						<LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+					</LengthsOfStay>
+				</AvailStatusMessage>
+			</AvailStatusMessages>
+		</OTA_HotelAvailNotifRQ>
+	</soap:Body>
+</soap:Envelope>

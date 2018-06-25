@@ -1,0 +1,13 @@
+﻿<RETURNDATA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en-GB" type="HB" xsi:noNamespaceSchemaLocation="http://xmlv5test.travco.co.uk/trlink/schema/HBookingV7Rcv.xsd">
+  <DATA_HOTEL ADULTS="2" ADULT_PRICE="15.23" ARR_DATE="29-Jun-2014" CHILD_PRICE="0.00" CURR_CODE="PDS" DURATION="1" HOTEL_CODE="YYL" NO_OF_ROOMS="1" PRICE_CODE="LONDON" ROOM_CODE="DWB" STATUS="P" TRAVCO_REF_NO="SM03127/01">
+    <MESSAGE ERROR_CODE="C08">
+      <ERROR_DESCRIPTION>Waiting to be amended by TRAVCO VER9TESTING</ERROR_DESCRIPTION>
+    </MESSAGE>
+    <PAX_NAME>AMILA</PAX_NAME>
+    <AGENTS_REF_NO>Agentref</AGENTS_REF_NO>
+    <ROOM_NAME>Double Room - With Breakfast</ROOM_NAME>
+    <PRICE_DISP>C08 Waiting to be amended by TRAVCO VER9TESTING</PRICE_DISP>
+    <CURRENCY_NAME>Pounds Sterling</CURRENCY_NAME>
+    <HotelName>County London (Testing)</HotelName>
+  </DATA_HOTEL>
+</RETURNDATA>

@@ -1,0 +1,322 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en">
+Sending Hotel Booking string. "INTERNAL_CODE2" - Agent Transmission No. Create a starting number and keep increasing it with each booking. Do not repeat an old number. "INTERNAL_CODE6" - Agent's reference "REF_NO" - blank for new booking, Booking reference number for old booking "OUR_REF_NO" - Agents reference number "ARR_DATE" - Arrival date (dd/mmm/yyyy) "STATUS" - "B" to book, "C" to cancel "SER_STATUS" - "B" to book, "C" to cancel
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="BOOKING">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="HEADER" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="DATA_HOTEL" minOccurs="1" maxOccurs="99"/>
+			</xsd:sequence>
+			<xsd:attribute name="type" type="xsd:string" fixed="HB" use="required"/>
+			<xsd:attribute name="lang" default="en-GB">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="[a-z]{2}-[A-Z]{2}"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="NeedDTD" default="no">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="yes"/>
+						<xsd:enumeration value="no"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="returnURLNeed" default="no">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="yes"/>
+						<xsd:enumeration value="no"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="returnURL" type="xsd:string"/>
+			<xsd:attribute name="AGENTCODE" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="6"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="AGENTPASSWORD" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="10"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="HEADER">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="INTERNAL_CODE1" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE2" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE3" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE4" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE5" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE6" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE7" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE8" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="INTERNAL_CODE9" minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+			<xsd:attribute name="NeedHotelMessages" default="NO">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="YES"/>
+						<xsd:enumeration value="NO"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="ClerkCode">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="3"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="ClerkPassword">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="8"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="INTERNAL_CODE1" type="xsd:string" fixed="DWEBCN"/>
+	<xsd:element name="INTERNAL_CODE2" type="xsd:string"/>
+	<xsd:element name="INTERNAL_CODE3" type="xsd:string" fixed=""/>
+	<xsd:element name="INTERNAL_CODE4" type="xsd:string"/>
+	<xsd:element name="INTERNAL_CODE5" type="xsd:string" fixed="DWEBRS"/>
+	<xsd:element name="INTERNAL_CODE6" type="xsd:string"/>
+	<xsd:element name="INTERNAL_CODE7" type="xsd:string" fixed="1"/>
+	<xsd:element name="INTERNAL_CODE8" type="xsd:string" fixed="VB"/>
+	<xsd:element name="INTERNAL_CODE9" type="xsd:string" fixed="travel system"/>
+	<xsd:element name="DATA_HOTEL">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="PAX_NAME" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="REF_NO" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="OUR_REF_NO" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="COMMENTS" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="HOTEL_REQUEST" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="AGENT_COMMENTS" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="SERVICELIST" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+			<xsd:attribute name="ADULTS" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:integer">
+						<xsd:totalDigits value="3"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="CHILDREN">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:integer">
+						<xsd:totalDigits value="3"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="DURATION" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:positiveInteger">
+						<xsd:totalDigits value="3"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="ARR_DATE" use="required" type="xsd:string"/>
+			<xsd:attribute name="HOTEL_CODE" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="4"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="ROOM_CODE" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="3"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="STATUS" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="1"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="PRICE_CODE">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="8"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="INTERNAL_CODE10" type="xsd:string" use="required" fixed="1"/>
+			<xsd:attribute name="INFANTS">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:integer">
+						<xsd:totalDigits value="1"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="INTERNAL_CODE11" use="required" type="xsd:string" fixed="1"/>
+			<xsd:attribute name="ARR_TRANS_NO">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="8"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="ARR_FROM" type="xsd:string"/>
+			<xsd:attribute name="ARR_TO" type="xsd:string"/>
+			<xsd:attribute name="ARR_TIME">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="5"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="DEP_TRANS_NO">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="8"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="DEP_FROM">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="3"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="DEP_TO">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="3"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="DEP_TIME">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="5"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PAX_NAME">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="REF_NO">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="10"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="OUR_REF_NO">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="25"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="COMMENTS">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="HOTEL_REQUEST">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="AGENT_COMMENTS">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value=""/>
+				<xsd:enumeration value="Must have hotel and room type requested"/>
+				<xsd:enumeration value="Alternative hotel of similar standard and price acceptable"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="SERVICELIST">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="DATA_SERVICE" minOccurs="1" maxOccurs="5"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DATA_SERVICE">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute name="SER_CODE" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="6"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="SER_DATE" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string"/>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="SER_DURATION">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:integer">
+								<xsd:totalDigits value="3"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="SER_PAX_NO" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:integer">
+								<xsd:totalDigits value="3"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="SER_STATUS">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="1"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="SER_PRINCIPAL" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="6"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="SER_LOCATOR" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="6"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap-env:Envelope xmlns:soap-env="https://protect-eu.mimecast.com/s/EWL6CMjYVumQy2i7ex1P?domain=schemas.xmlsoap.org">
+	<soap-env:Header>
+		<Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA" xmlns="https://protect-eu.mimecast.com/s/uI4fCNxZ6uy2qZHPhpNi?domain=api.hotels-vacation.com">
+			<ComponentInfo User="his" Pwd="XXXXXXXX" ComponentType="Hotel"  />
+		</Interface>
+	</soap-env:Header>
+	<soap-env:Body RequestId="2015042717102623388656" Transaction="HotelAvailRQ">
+		<OTA_HotelAvailRQ xmlns:xsi="https://protect-eu.mimecast.com/s/z-qtCO710IQ6LNUlqpRn?domain=w3.org" xmlns:xsd="https://protect-eu.mimecast.com/s/BXGLCP12VSV710SpEuH-?domain=w3.org" EchoToken="2015042717102623388656" TimeStamp="2015-04-27T17:10:26+09:00" Target="Production" Version="1.000" PrimaryLangID="en" xmlns="https://protect-eu.mimecast.com/s/z4jyCQ138SZ51Xf6lqdh?domain=opentravel.org">
+			<AvailRequestSegments>
+				<AvailRequestSegment>
+					<StayDateRange Start="2015-10-12" Duration="Day" End="2015-10-13" />
+					<RatePlanCandidates>
+						<RatePlanCandidate RatePlanType="5" RatePlanCode="1501001501" RPH="1">
+							<HotelRefs>
+								<HotelRef HotelCode="1501001" />
+							</HotelRefs>
+							<MealsIncluded MealPlanCodes="BRE" />
+						</RatePlanCandidate>
+					</RatePlanCandidates>
+					<RoomStayCandidates>
+						<RoomStayCandidate RoomTypeCode="1501001004" Quantity="1" RatePlanCandidateRPH="1">
+							<GuestCounts>
+								<GuestCount AgeQualifyingCode="1" Count="2" />
+							</GuestCounts>
+						</RoomStayCandidate>
+					  <RoomStayCandidate RoomTypeCode="1501001004" Quantity="1" RatePlanCandidateRPH="1">
+					    <GuestCounts>
+					      <GuestCount AgeQualifyingCode="1" Count="2" />
+					    </GuestCounts>
+					  </RoomStayCandidate>
+					</RoomStayCandidates>
+				</AvailRequestSegment>
+			</AvailRequestSegments>
+		</OTA_HotelAvailRQ>
+	</soap-env:Body>
+</soap-env:Envelope>

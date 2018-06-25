@@ -1,0 +1,13 @@
+FROM newregistry.travco.co.uk/travco-dotnet:2.0
+
+ENV MICRO_SERVICE Travco.HIS
+
+COPY src/ app/
+
+WORKDIR /app/$MICRO_SERVICE
+
+RUN dotnet restore -s https://api.nuget.org/v3/index.json -s http://tfs.travco.co.uk:3279/nuget/TravcoDev --no-cache
+
+EXPOSE 5000
+
+ENTRYPOINT  [ "dotnet","run" ]

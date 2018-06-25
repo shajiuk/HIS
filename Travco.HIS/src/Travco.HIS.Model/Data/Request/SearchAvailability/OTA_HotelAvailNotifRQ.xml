@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA"
+               xmlns="http://api.hotels-vacation.com/Documentation/XML/OTA/4/2011B/">
+      <ComponentInfo User="his" Pwd="******" ComponentType="Hotel" />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="2014121813010017221518" Transaction="HotelAvailNotifRQ">
+<OTA_HotelAvailNotifRQ Target="Production" Version="1.000" PrimaryLangID="en" TimeStamp="2012-10-05T13:56:52+02:00" xmlns="http://www.opentravel.org/OTA/2003/05">
+  <AvailStatusMessages HotelCode="hotelA">
+    <AvailStatusMessage BookingLimit="5" BookingLimitMessageType="SetLimit">
+      <StatusApplicationControl Start="2012-06-01" End="2012-06-06" RatePlanCode="RACK" InvCode="DELUXE" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+      <!-- Open/Close, values: Open|Close -->
+      <RestrictionStatus Restriction="Master" Status="Close"/>
+      <LengthsOfStay ArrivalDateBased="1" FixedPatternLength="8">
+        <!-- FPLOS, max. 21 items, if no change in last items, the value from the last send item is used until the last (21th) item -->
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="1" OpenStatusIndicator="false"/>
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="2" OpenStatusIndicator="true"/>
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="3" OpenStatusIndicator="true"/>
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="4" OpenStatusIndicator="true"/>
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="5" OpenStatusIndicator="false"/>
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="6" OpenStatusIndicator="false"/>
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="7" OpenStatusIndicator="false"/>
+        <LengthOfStay MinMaxMessageType="FullPatternLOS" TimeUnit="Day" Time="8" OpenStatusIndicator="true"/>
+      </LengthsOfStay>
+    </AvailStatusMessage>
+  </AvailStatusMessages>
+</OTA_HotelAvailNotifRQ>
+  </soap-env:Body>
+</soap-env:Envelope>

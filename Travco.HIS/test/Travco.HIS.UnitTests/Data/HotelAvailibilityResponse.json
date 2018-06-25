@@ -1,0 +1,286 @@
+﻿{
+  "@type" : "HA",
+  "@lang" : "en-GB",
+  "DATA" : [{
+      "COUNTRY_NAME" : "Italy",
+      "CITY_NAME" : "Turin",
+      "HOTEL_DATA" : [{
+          "HOTEL_NAME" : "NH Collection Torino Piazza Carlina (Superior)",
+          "HOTEL_STAR" : "4star",
+          "HOTEL_ADDITIONAL_DATA" : [{
+              "HOTEL_AMENITY" : [{
+                  "HOTEL_AMENITY_DATA" : [{
+                      "HOTEL_AMENITY_NAME" : "Air Conditioned (public areas)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_dd97c792-7ea3-4ae4-a16e-6cd5d1bde237"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Bar(s)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_6c8602bd-0ea5-4807-81df-2e69b99b9636"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Breakfast Room",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_cbdec84a-1b43-4105-8022-3e01cc27d2bd"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Business Centre",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_3d33f929-cae1-4409-a4be-f147c3a9987a"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Conference Facilities",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_5517e273-7c13-48ab-be7b-d29651899cae"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Concierge",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_ab7b7e51-7b33-4706-84d1-96eae1d77de5"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Gym",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_d311e9be-9c69-4273-af44-9ecf84f2529c"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Ironing amenities (on request)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_e8c339b3-f68e-445d-8b5d-2574e5aedc14"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Library/Reading Room",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_c4e43674-aaee-4c40-8ad8-3d3ac80b4152"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Parking - nearby",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_c2d86a12-583c-4486-b2d3-60677b026bc8"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Restaurant(s)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_d0fcdb70-a40a-4c69-8666-281c14c3b443"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Room Service",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_8a4e0d86-ecdd-48f5-b58a-8aa02fc38cc5"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Disabled Facilities",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_6223b5bf-d73b-4d14-91a7-1f27f2863370"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Free Wi-fi (public areas)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_78f509c8-c368-4369-bb19-f2feefc450d6"
+                    }
+                  ]
+                }
+              ],
+              "HOTEL_ADDRESS" : {
+                "ADDRESS_LINE1" : "15 Piazza Carlo Emanuele II"
+              },
+              "@TELEPHONE_NO" : "0118601611",
+              "@FAX_NO" : "0118601612",
+              "@EMAIL" : "leisurebookings@nh-hotels.com"
+            }
+          ],
+          "SubHotelData" : [{
+              "HOTEL_NAME" : "NH Collection Torino Piazza Carlina (Superior)",
+              "RatePlanDetails" : {
+                "RatePlanDescription" : "Superior-Bed & Breakfast-Standard"
+              },
+              "CURRENCY_NAME" : "EUR - Euros",
+              "ROOM_DATA" : [{
+                  "@ADULT_PRICE" : 117.38,
+                  "@CHILD_PRICE" : 0.0,
+                  "ROOM_NAME" : "Single",
+                  "ADULT_PRICE_DETAILS" : "01-Jan-2017 5nts@117.38;06-Jan-2017 22nts@106.51;",
+                  "CHILD_PRICE_DETAILS" : "",
+                  "ReducedPriceDetails" : {
+                    "@AdultReductionAmount" : 0.0,
+                    "@AdultReductionPercentage" : 0.0
+                  },
+                  "@ROOM_PAX" : "1",
+                  "@TOTAL_ADULT_PRICE" : 3169.26,
+                  "@TOTAL_CHILD_PRICE" : 0.0,
+                  "@PRICE_CODE" : "NAB2CFRA",
+                  "@CCHARGES_CODE" : "IN6863",
+                  "@EXTRA_BED_INDICATOR" : "N",
+                  "@NO_OF_EXTRA_BEDS" : "0"
+                }, {
+                  "@ADULT_PRICE" : 118.0,
+                  "@CHILD_PRICE" : 0.0,
+                  "ROOM_NAME" : "Double",
+                  "ADULT_PRICE_DETAILS" : "28-Jan-2017 1nts@106.51;01-Jan-2017 4nts@118;06-Jan-2017 22nts@108;",
+                  "CHILD_PRICE_DETAILS" : "",
+                  "ReducedPriceDetails" : {
+                    "@AdultReductionAmount" : 0.0,
+                    "@AdultReductionPercentage" : 0.0
+                  },
+                  "@ROOM_PAX" : "2",
+                  "@TOTAL_ADULT_PRICE" : 3186.0,
+                  "@TOTAL_CHILD_PRICE" : 0.0,
+                  "@PRICE_CODE" : "NAB2CFRA",
+                  "@CCHARGES_CODE" : "IN6863",
+                  "@EXTRA_BED_INDICATOR" : "N",
+                  "@NO_OF_EXTRA_BEDS" : "0"
+                }, {
+                  "@ADULT_PRICE" : 160.5,
+                  "@CHILD_PRICE" : 0.0,
+                  "ROOM_NAME" : "Triple",
+                  "ADULT_PRICE_DETAILS" : "28-Jan-2017 1nts@108;01-Jan-2017 26nts@160.5;",
+                  "CHILD_PRICE_DETAILS" : "",
+                  "ReducedPriceDetails" : {
+                    "@AdultReductionAmount" : 0.0,
+                    "@AdultReductionPercentage" : 0.0
+                  },
+                  "@ROOM_PAX" : "3",
+                  "@TOTAL_ADULT_PRICE" : 4333.5,
+                  "@TOTAL_CHILD_PRICE" : 0.0,
+                  "@PRICE_CODE" : "NAB2CFRA",
+                  "@CCHARGES_CODE" : "IN6863",
+                  "@EXTRA_BED_INDICATOR" : "N",
+                  "@NO_OF_EXTRA_BEDS" : "0"
+                }
+              ],
+              "HOTEL_PICTURE" : "http://www.travco.co.uk/images/hotels/RT3/rt3_front.jpg",
+              "@HOTEL_CODE" : "1NV",
+              "@CURRENCY_CODE" : "EUR - Euros",
+              "@STATUS" : "Requestable"
+            }
+          ],
+          "@HOTEL_CODE" : "1NV",
+          "@STATUS" : "Available"
+        }, {
+          "HOTEL_NAME" : "Relais De Charme Il Sogno Di Giulietta (Classic Elegant)",
+          "HOTEL_STAR" : "5star",
+          "HOTEL_ADDITIONAL_DATA" : [{
+              "HOTEL_AMENITY" : [{
+                  "HOTEL_AMENITY_DATA" : [{
+                      "HOTEL_AMENITY_NAME" : "Air Conditioned (public areas)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_dd97c792-7ea3-4ae4-a16e-6cd5d1bde237"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Babysitting available",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_ffdbf517-2ba1-405d-aeea-7e641bed8408"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Concierge",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_ab7b7e51-7b33-4706-84d1-96eae1d77de5"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Laundry Service",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_11641d3f-afff-4e79-bd8b-dcc73a101a7c"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Parking - nearby",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_c2d86a12-583c-4486-b2d3-60677b026bc8"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Room Service",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_8a4e0d86-ecdd-48f5-b58a-8aa02fc38cc5"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Free Wi-fi (public areas)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_78f509c8-c368-4369-bb19-f2feefc450d6"
+                    }
+                  ]
+                }
+              ],
+              "HOTEL_ADDRESS" : {
+                "ADDRESS_LINE1" : "Via Cappello 23, Cortile di Giulietta"
+              },
+              "@TELEPHONE_NO" : "0458009932",
+              "@FAX_NO" : "0458009932",
+              "@EMAIL" : "booking@sognodigiulietta.com"
+            }
+          ],
+          "SubHotelData" : [{
+              "HOTEL_NAME" : "Relais De Charme Il Sogno Di Giulietta (Classic Elegant)",
+              "RatePlanDetails" : {
+                "RatePlanDescription" : "Classic Elegant-Bed & Breakfast-Standard"
+              },
+              "CURRENCY_NAME" : "EUR - Euros",
+              "ROOM_DATA" : [{
+                  "@ADULT_PRICE" : 119.56,
+                  "@CHILD_PRICE" : 0.0,
+                  "ROOM_NAME" : "Single",
+                  "ADULT_PRICE_DETAILS" : "01-Jan-2017 10nts@119.56;10-Jan-2017 17nts@130.43;",
+                  "CHILD_PRICE_DETAILS" : "",
+                  "ReducedPriceDetails" : {
+                    "@AdultReductionAmount" : 0.0,
+                    "@AdultReductionPercentage" : 0.0
+                  },
+                  "@ROOM_PAX" : "1",
+                  "@TOTAL_ADULT_PRICE" : 3228.12,
+                  "@TOTAL_CHILD_PRICE" : 0.0,
+                  "@PRICE_CODE" : "NAB2CFRA",
+                  "@CCHARGES_CODE" : "IN6863",
+                  "@EXTRA_BED_INDICATOR" : "N",
+                  "@NO_OF_EXTRA_BEDS" : "0"
+                }, {
+                  "@ADULT_PRICE" : 120.0,
+                  "@CHILD_PRICE" : 0.0,
+                  "ROOM_NAME" : "Double",
+                  "ADULT_PRICE_DETAILS" : "27-Jan-2017 1nts@130.43;01-Jan-2017 9nts@120;10-Jan-2017 17nts@130.42;",
+                  "CHILD_PRICE_DETAILS" : "",
+                  "ReducedPriceDetails" : {
+                    "@AdultReductionAmount" : 0.0,
+                    "@AdultReductionPercentage" : 0.0
+                  },
+                  "@ROOM_PAX" : "2",
+                  "@TOTAL_ADULT_PRICE" : 3240.0,
+                  "@TOTAL_CHILD_PRICE" : 0.0,
+                  "@PRICE_CODE" : "NAB2CFRA",
+                  "@CCHARGES_CODE" : "IN6863",
+                  "@EXTRA_BED_INDICATOR" : "N",
+                  "@NO_OF_EXTRA_BEDS" : "0"
+                }
+              ],
+              "HOTEL_PICTURE" : "http://www.travco.co.uk/images/hotels/RT3/rt3_front.jpg",
+              "@HOTEL_CODE" : "16O",
+              "@CURRENCY_CODE" : "EUR - Euros",
+              "@STATUS" : "Requestable"
+            }
+          ],
+          "@HOTEL_CODE" : "16O",
+          "@STATUS" : "Available"
+        }, {
+          "HOTEL_NAME" : "Excel Milano 3 Next (Room Only)",
+          "HOTEL_STAR" : "2star",
+          "HOTEL_ADDITIONAL_DATA" : [{
+              "HOTEL_AMENITY" : [{
+                  "HOTEL_AMENITY_DATA" : [{
+                      "HOTEL_AMENITY_NAME" : "Air Conditioned (public areas)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_dd97c792-7ea3-4ae4-a16e-6cd5d1bde237"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Bar(s)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_6c8602bd-0ea5-4807-81df-2e69b99b9636"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Conference Facilities",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_5517e273-7c13-48ab-be7b-d29651899cae"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Internet corner",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_0db7a944-72ed-4ce9-a0c2-2a92236d7ea5"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Ironing amenities (on request)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_e8c339b3-f68e-445d-8b5d-2574e5aedc14"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Laundry Service",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_11641d3f-afff-4e79-bd8b-dcc73a101a7c"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Parking - onsite",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_4a112b46-569f-4647-a985-e4a83257628a"
+                    }, {
+                      "HOTEL_AMENITY_NAME" : "Wi-fi (public areas)",
+                      "@HOTEL_AMENITY_CODE" : "Masterdata_cedd6079-467d-4fcf-87a7-f357bb2acac2"
+                    }
+                  ]
+                }
+              ],
+              "HOTEL_ADDRESS" : {
+                "ADDRESS_LINE1" : "Via Sardegna 7, Pieve Emanuele"
+              },
+              "@TELEPHONE_NO" : "0282246091",
+              "@FAX_NO" : "0282246038",
+              "@EMAIL" : "info@excelmilano3next.it"
+            }
+          ],
+          "SubHotelData" : [{
+              "HOTEL_NAME" : "Excel Milano 3 Next (Room Only)",
+              "RatePlanDetails" : {
+                "RatePlanDescription" : "Standard-Room Only-Standard"
+              },
+              "CURRENCY_NAME" : "EUR - Euros",
+              "ROOM_DATA" : [],
+              "HOTEL_PICTURE" : "http://www.travco.co.uk/images/hotels/RT3/rt3_front.jpg",
+              "@HOTEL_CODE" : "1CJ",
+              "@CURRENCY_CODE" : "EUR - Euros",
+              "@STATUS" : "Requestable"
+            }
+          ],
+          "@HOTEL_CODE" : "1CJ",
+          "@STATUS" : "Available"
+        }
+      ],
+      "@CITY_CODE" : "Masterdata_2d0f5a54-ca99-4f3d-b45b-29440d1085de",
+      "@NO_OF_ADULTS" : "14",
+      "@NO_OF_CHILDREN" : "0",
+      "@CHECK_IN_DATE" : "01/01/2017 00:00:00",
+      "@CHECK_OUT_DATE" : "28/01/2017 00:00:00"
+    }
+  ]
+}

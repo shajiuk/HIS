@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA" xmlns:hisota="http://api.hotels-vacation.com/Documentation/XML/OTA/4/2011B/">
+      <ComponentInfo User=" xxx " Pwd="xxx " ComponentType="Hotel"/>
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="2014121523335417042503" Transaction="CancelRQ">
+    <OTA_CancelRQ EchoToken="2014121523335417042503" TimeStamp="2014-12-15T23:33:54+09:00" Target="Production" Version="1.000" PrimaryLangID="en" CancelType="Commit">
+      <UniqueID Type="15" ID="HV1408300001"/>
+    </OTA_CancelRQ>
+  </soap-env:Body>
+</soap-env:Envelope>

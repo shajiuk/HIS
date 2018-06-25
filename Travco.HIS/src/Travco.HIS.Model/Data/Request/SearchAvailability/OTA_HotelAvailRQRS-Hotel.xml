@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA"
+    xmlns="http://api.hotels-vacation.com/Documentation/XML/OTA/4/2011B/">
+      <ComponentInfo User="his" Pwd="******" ComponentType="Hotel" />
+    </Interface>
+  </soap-env:Header>
+	<soap-env:Body RequestId="2014121813010017221518" Transaction="HotelAvailRQ">
+		<OTA_HotelAvailRQ EchoToken="2014121813010017221518" TimeStamp="2014-12-18T13:01:00+09:00" Target="Production" Version="1.000" PrimaryLangID="en">
+			<AvailRequestSegments>
+				<AvailRequestSegment>
+					<StayDateRange Start="2014-12-25" Duration="Day" End="2014-12-27"/>
+					<RatePlanCandidates>
+						<RatePlanCandidate RatePlanType="5" RatePlanCode="*" RPH="">
+							<HotelRefs>
+								<HotelRef HotelCode="1407327"/>
+							</HotelRefs>
+						</RatePlanCandidate>
+					</RatePlanCandidates>
+					<RoomStayCandidates>
+						<RoomStayCandidate RoomTypeCode="*" Quantity="1" RatePlanCandidateRPH="1">
+							<GuestCounts>
+								<GuestCount AgeQualifyingCode="1" Count="3"/>
+							</GuestCounts>
+						</RoomStayCandidate>
+					</RoomStayCandidates>
+				</AvailRequestSegment>
+			</AvailRequestSegments>
+		</OTA_HotelAvailRQ>
+	</soap-env:Body>
+</soap-env:Envelope>

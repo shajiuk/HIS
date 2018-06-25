@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap-env:Envelope xmlns:soap-env="https://protect-eu.mimecast.com/s/67xnCy81vsVlP7SA5smH?domain=schemas.xmlsoap.org">
+	<soap-env:Header />
+	<soap-env:Body RequestId="20150424023516855856" Transaction="HotelAvailNotifRS">
+		<OTA_HotelAvailNotifRS xmlns:xsi="https://protect-eu.mimecast.com/s/1OM0CAnJYIqvKZtOkt9C?domain=w3.org" xmlns:xsd="https://protect-eu.mimecast.com/s/TtDtCBgKYH2gXDs7jLX5?domain=w3.org" TimeStamp="2015-04-24T02:35:16.944Z" Version="1.000" PrimaryLangID="en" xmlns="https://protect-eu.mimecast.com/s/XRmkCxGZrFN25LTRLYk6?domain=opentravel.org">
+			<Success />
+		</OTA_HotelAvailNotifRS>
+	</soap-env:Body>
+</soap-env:Envelope>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap-env:Envelope xmlns:soap-env="https://protect-eu.mimecast.com/s/LjwUCVm8VuQDn2Ulk-br?domain=schemas.xmlsoap.org">
+	<soap-env:Header>
+		<Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA" xmlns="https://protect-eu.mimecast.com/s/xXYoCWng9IoAL6fvsMqX?domain=api.hotels-vacation.com">
+			<ComponentInfo User="his" Pwd="XXXXXXXX" ComponentType="Hotel"  />
+		</Interface>
+	</soap-env:Header>
+	<soap-env:Body RequestId="2015042717113523388678" Transaction="HotelResRQ">
+		<OTA_HotelResRQ xmlns:xsi="https://protect-eu.mimecast.com/s/_tFYCX6j9urxP4uRjbcz?domain=w3.org" xmlns:xsd="https://protect-eu.mimecast.com/s/SOVECY6k9uBzWDfnGpip?domain=w3.org" EchoToken="2015042717113523388678" TimeStamp="2015-04-27T17:11:35+09:00" Target="Production" Version="1.000" PrimaryLangID="en" xmlns="https://protect-eu.mimecast.com/s/FydtCZ4l9IB3q7fvqJJu?domain=opentravel.org">
+			<HotelReservations>
+				<HotelReservation RoomStayReservation="true">
+					<UniqueID Type="14" ID="HB15042779670" />
+					<RoomStays>
+						<RoomStay>
+							<RoomTypes>
+								<RoomType RoomTypeCode="1501001004" />
+							</RoomTypes>
+							<RatePlans>
+								<RatePlan RatePlanCode="1501001501">
+									<MealsIncluded MealPlanCodes="BRE" />
+								</RatePlan>
+							</RatePlans>
+							<RoomRates>
+								<RoomRate EffectiveDate="2015-10-12" ExpireDate="2015-10-13" RoomTypeCode="1501001004" NumberOfUnits="1" RatePlanCode="1501001501">
+									<Rates>
+										<Rate EffectiveDate="2015-10-12" ExpireDate="2015-10-13" RateTimeUnit="Day">
+											<Base AmountBeforeTax="23818" AmountAfterTax="23818" CurrencyCode="USD" DecimalPlaces="2" />
+											<Total AmountBeforeTax="23818" AmountAfterTax="23818" CurrencyCode="USD" DecimalPlaces="2" />
+										</Rate>
+									</Rates>
+								</RoomRate>
+							</RoomRates>
+							<GuestCounts>
+								<GuestCount AgeQualifyingCode="1" Count="2" />
+							  <GuestCount AgeQualifyingCode="4" Count="2" />
+							</GuestCounts>
+							<TimeSpan Start="2015-10-12" End="2015-10-13" />
+							<DepositPayments>
+								<GuaranteePayment>
+									<AcceptedPayments>
+										<AcceptedPayment>
+											<PaymentCard CardType="1" CardCode="MC" CardNumber="XXXXXXXXXXXXXXXX" ExpireDate="0417" />
+										</AcceptedPayment>
+									</AcceptedPayments>
+									<AmountPercent Amount="238.18" CurrencyCode="USD" />
+								</GuaranteePayment>
+							</DepositPayments>
+							<BasicPropertyInfo HotelCode="1501001" />
+							<ResGuestRPHs>
+								<ResGuestRPH RPH="1" />
+								<ResGuestRPH RPH="2" />
+							</ResGuestRPHs>
+						</RoomStay>
+					</RoomStays>
+					<ResGuests>
+						<ResGuest ResGuestRPH="1" AgeQualifyingCode="1">
+							<Profiles>
+								<ProfileInfo>
+									<Profile ProfileType="1">
+										<Customer>
+											<PersonName>
+												<GivenName>TESTLA</GivenName>
+												<Surname>HAGA</Surname>
+											</PersonName>
+										</Customer>
+									</Profile>
+								</ProfileInfo>
+							</Profiles>
+						</ResGuest>
+						<ResGuest ResGuestRPH="2" AgeQualifyingCode="1">
+							<Profiles>
+								<ProfileInfo>
+									<Profile ProfileType="1">
+										<Customer>
+											<PersonName>
+												<GivenName>TESTLB</GivenName>
+												<Surname>HAGA</Surname>
+											</PersonName>
+										</Customer>
+									</Profile>
+								</ProfileInfo>
+							</Profiles>
+						</ResGuest>
+					</ResGuests>
+				</HotelReservation>
+			</HotelReservations>
+		</OTA_HotelResRQ>
+	</soap-env:Body>
+</soap-env:Envelope>

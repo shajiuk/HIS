@@ -1,0 +1,27 @@
+﻿{
+  "searchapi": {
+    "listenuri": "http://0.0.0.0:5000"
+  },
+  "couchbase": {
+    "endpoints": "http://10.0.111.213:8091/pools",
+    "username": "Administrator",
+    "password": "Travco-SS100"
+  },
+  "elasticsearch": {
+    "endpoints": "http://10.0.111.214:9200"
+  },
+  "eventStore": {
+    "endpoints": "http://172.16.50.111:8091/pools,http://172.16.50.112:8091/pools,http://172.16.50.113:8091/pools",
+    "username": "admin",
+    "password": "Travco-SS100"
+  },
+  "authorisation": {
+    "tokenserver": { "endpoint": "https://identitytest.travco.co.uk" },
+    "clientname": "hotel.api",
+    "scope": "hotelapi",
+    "secret": "notvery"
+  },
+  "telemetry": {
+    "disabled": true
+  }
+}

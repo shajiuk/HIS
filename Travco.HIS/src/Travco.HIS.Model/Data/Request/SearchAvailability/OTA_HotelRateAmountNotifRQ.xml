@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA"
+               xmlns="http://api.hotels-vacation.com/Documentation/XML/OTA/4/2011B/">
+      <ComponentInfo User="his" Pwd="******" ComponentType="Hotel" />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="2014121813010017221518" Transaction="HotelRateAmountNotifRQ">
+    <OTA_HotelRateAmountNotifRQ TimeStamp="2014-12-18T04:00:12.325Z" Version="1.000" PrimaryLangID="en">
+      <RateAmountMessages HotelCode="1103762">
+        <RateAmountMessage>
+          <StatusApplicationControl Start="2015-03-18" End="2015-03-21" RatePlanCode="1103762501" InvCode="1103762001" IsRoom="1" InvCodeApplication="InvCode" RatePlanCodeType="RatePlanCode"/>
+          <Rates>
+            <Rate NumberOfUnits="1" RateTimeUnit="Day" UnitMultiplier="0">
+              <BaseByGuestAmts>
+                <BaseByGuestAmt AmountBeforeTax="12460" AmountAfterTax="12460" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="0"/>
+                <BaseByGuestAmt AmountBeforeTax="10367" AmountAfterTax="10367" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="1"/>
+                <BaseByGuestAmt AmountBeforeTax="11414" AmountAfterTax="11414" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="2"/>
+                <BaseByGuestAmt AmountBeforeTax="34" AmountAfterTax="34" CurrencyCode="USD" DecimalPlaces="0" AgeQualifyingCode="4" NumberOfGuests="1"/>
+                <BaseByGuestAmt AmountBeforeTax="41" AmountAfterTax="41" CurrencyCode="USD" DecimalPlaces="0" AgeQualifyingCode="4" NumberOfGuests="2"/>
+              </BaseByGuestAmts>
+            </Rate>
+            <Rate NumberOfUnits="1" RateTimeUnit="Day" UnitMultiplier="2">
+              <BaseByGuestAmts>
+                <BaseByGuestAmt AmountBeforeTax="47000" AmountAfterTax="47000" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="0"/>
+                <BaseByGuestAmt AmountBeforeTax="21000" AmountAfterTax="21000" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="1"/>
+                <BaseByGuestAmt AmountBeforeTax="39000" AmountAfterTax="39000" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="2"/>
+                <BaseByGuestAmt AmountBeforeTax="57" AmountAfterTax="57" CurrencyCode="USD" DecimalPlaces="0" AgeQualifyingCode="4" NumberOfGuests="1"/>
+                <BaseByGuestAmt AmountBeforeTax="75" AmountAfterTax="75" CurrencyCode="USD" DecimalPlaces="0" AgeQualifyingCode="4" NumberOfGuests="2"/>
+              </BaseByGuestAmts>
+            </Rate>
+            <Rate NumberOfUnits="1" RateTimeUnit="Day" UnitMultiplier="3">
+              <BaseByGuestAmts>
+                <BaseByGuestAmt AmountBeforeTax="70000" AmountAfterTax="70000" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="0"/>
+                <BaseByGuestAmt AmountBeforeTax="30000" AmountAfterTax="30000" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="1"/>
+                <BaseByGuestAmt AmountBeforeTax="58000" AmountAfterTax="58000" CurrencyCode="USD" DecimalPlaces="2" AgeQualifyingCode="1" NumberOfGuests="2"/>
+                <BaseByGuestAmt AmountBeforeTax="85" AmountAfterTax="85" CurrencyCode="USD" DecimalPlaces="0" AgeQualifyingCode="4" NumberOfGuests="1"/>
+                <BaseByGuestAmt AmountBeforeTax="110" AmountAfterTax="110" CurrencyCode="USD" DecimalPlaces="0" AgeQualifyingCode="4" NumberOfGuests="2"/>
+              </BaseByGuestAmts>
+            </Rate>            
+          </Rates>
+        </RateAmountMessage>
+      </RateAmountMessages>
+    </OTA_HotelRateAmountNotifRQ>
+  </soap-env:Body>
+</soap-env:Envelope>

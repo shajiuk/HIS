@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns="https://protect-eu.mimecast.com/s/rs1nC66rAuwn6Pf7fIbX?domain=opentravel.org" xmlns:soap="https://protect-eu.mimecast.com/s/Q79CC2RnwsyN2VHyI3Xn?domain=schemas.xmlsoap.org" xmlns:hisota="https://protect-eu.mimecast.com/s/xD1XC3loxuN5gXTMtqJU?domain=api.hotels-vacation.com">
+	<soap:Header>
+		<hisota:Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA">
+			<hisota:ComponentInfo User="derby" Pwd="XXXXXXXX" ComponentType="Hotel"/>
+		</hisota:Interface>
+	</soap:Header>
+	<soap:Body RequestId="2015042717124023388688" Transaction="CancelRS">
+		<OTA_CancelRS EchoToken="2015042717124023388688" Target="Production" Version="1.000" PrimaryLangID="en" Status="Cancelled">
+			<UniqueID Type="15" ID="HYATT000EC55AE17-658E-43F7-B4D2-E1648455E5F1"/>
+			<CancelInfoRS>
+				<UniqueID Type="15" ID="HB15042779670"/>
+			</CancelInfoRS>
+		</OTA_CancelRS>
+	</soap:Body>
+</soap:Envelope>

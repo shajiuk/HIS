@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">>
+  <soap-env:Header>
+    <hisota:Interface ChannelIdentifierId="HIS_TOKYO_IIJ_XML4H" Version="2011B" Interface="VACATION QUICK CONNECT XML 4 OTA" xmlns:hisota="http://api.hotels-vacation.com/Documentation/XML/OTA/4/2011B/">
+      <hisota:ComponentInfo User="xxx" Pwd="xxx" ComponentType="Hotel"/>
+    </hisota:Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="2014121415072216977024" Transaction="HotelResRS">
+    <OTA_HotelResRS EchoToken="2014121415072216977024" Version="1.000" PrimaryLangID="en">
+      <Errors>
+        <Error Language="en" Type="1" ShortText="32" Code="111">booking request is not available</Error>
+      </Errors>
+      <HotelReservations/>
+    </OTA_HotelResRS>
+  </soap-env:Body>
+</soap-env:Envelope>
